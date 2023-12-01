@@ -1,11 +1,66 @@
-h1 {
-    color:#9D858D;
-    font-size: 72px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+/* Everything */
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:white
+}
+/* Title + Subtitle */
+.title {
+    text-align: center;
+    background:  #b7b7a4;
+    padding: 10px;
+    margin: 30px;
+
 }
 
-.name {
-    color: #BBA0B2;
+h1 {
+    color: white;
+    font-size: 72px;
+    background: transparent;
+}
+
+/* color: #e0bed5   ffc6ed */
+h2 {
+    color: white;
     font-size: 32px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -35px;
+    margin-bottom: 40px;
+    background:  transparent;
+
+}
+
+
+
+/* Link customization */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color:  white;
+}
+
+a:link {
+    color:  #BBA0B2;
+}
+
+a:hover {
+    color:  #ffe8d6;
+}
+
+/* Recipe names */
+.name {
+    font-size: 32px;
+    padding: 50px;
+    text-align: center;
+    background: #6b705c;
+    margin: 30px;
+    margin-top: -20px;
+}
+
+.individual {
+    padding: 85px;
+    background:  transparent;
+
 }

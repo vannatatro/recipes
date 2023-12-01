@@ -1,37 +1,92 @@
+/* Everything */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:transparent;
+}
+
+/* title and image center */
+
 h1 {
-    color: #9D858D;
-    font-size: 48px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #6b705c;
+    font-size: 72px;
     text-align: center;
+    padding: 10px;
+    background: #b7b7a4;
+    height: 80px;
+    width: 350px;
+    margin-top: 120px;
+    margin-left: 45px;
+    position: absolute;
+    border-radius: 12px
+}
+
+.img {
+    text-align: right;
+   margin: 20px;
+}
+
+/* Description */
+.description {
+    background: #b7b7a4;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
 }
 
 h2 {
-    color: #BBA0B2;
-    font-size: 32px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:  white;
+    font-size: 38px;
+    background: transparent;
 }
 
 p {
-    color: #8CABBE;
-    font-size: 18px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    color: #6b705c;
+    font-size: 24px;
+    background: transparent;
 }
 
-h3 {
-    color: #A4A8D1;
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
 
+/* List and headings */
+h3 {
+    color:  white;
+    font-size: 32px;
 }
 
 li {
-    color: #A4BFEB;
+    color: #6b705c;
     font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* Ingredients */
+.ingredients {
+    background: #b7b7a4;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px
+}
+
+/* Steps */
+.steps {
+    background: #b7b7a4;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px
+
+}
+/* Return to Main Page */
+
 #main {
-    color: #BBA0B2;
-    font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* color: #BBA0B2; */
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+a {
+    color: #6b705c;
+}
+a:hover {
+    color:  #b7b7a4;
+}
+a:clicked {
+    color:  #6b705c;
 }

@@ -1,66 +1,170 @@
 /* Everything */
 
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background:white
+    font-family: "Roberto", sans-serif;
+    font-weight: 100;
+    padding: 0px;
+    margin: 0px;
+    --primary: #778f72;
+    --secondary: #b9c8b5;
+    --accent: #9ab495;
+    --background: #f9faf9;
+    --text: #070707
 }
-/* Title + Subtitle */
-.title {
-    text-align: center;
-    background:  #b7b7a4;
-    padding: 10px;
-    margin: 30px;
+
+.everything {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.spotlight,
+.new,
+.trending {
+    border: solid var(--accent);
+    padding: 20px;
+    border-radius: 15px;
+}
+.spotlight h2,
+.new h2,
+.trending h2 {
+    font-size: 48px;
 
 }
 
-h1 {
-    color: white;
-    font-size: 72px;
-    background: transparent;
+.header {
+    background-color: var(--primary);
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 75px;
+    padding-right: 75px;
 }
 
-/* color: #e0bed5   ffc6ed */
-h2 {
-    color: white;
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+input {
+    width: 450px;
+    height: 35px;
+    border: solid transparent;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 24px;
+}
+.header h1 {
+    font-size: 42px;
+}
+.header h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+
+.spotlight {
+    background-color: var(--secondary);
+    grid-area: 1/1/3/2;
+}
+.lowerSpot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.spotlight a {
     font-size: 32px;
-    margin-top: -35px;
-    margin-bottom: 40px;
-    background:  transparent;
+}
+.lowerSpot p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.new {
+    grid-area: 1/2/2/2;
+}
+.trending {
+    grid-area: 2/2/3/2;
+}
+
+.new,
+.trending {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--secondary);
+}
+
+.new a,
+.trending a {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+.imgAndName {
+    display: flex;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    border: 1px solid var(--accent);
+    border-radius: 15px;
+    background-color: var(--background);
+}
+
+.sections {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    grid-template-rows: 32.5vh 32.5vh;
+    /* padding: 30px; */
+    gap: 40px;
+    margin: 75px;
 
 }
 
+.sections div:hover {
+    cursor: pointer;
+}
 
+.sections h2 {
+    font-size: 32px;
+}
 
-/* Link customization */
 a {
     text-decoration: none;
-    color: white;
+    color: black;
+}
+.sections a:hover,
+.imgAndName a:hover {
+    text-decoration: underline;
 }
 
-a:visited {
-    color:  white;
+
+img {
+    cursor: pointer;
 }
 
-a:link {
-    color:  #BBA0B2;
-}
-
-a:hover {
-    color:  rgb(255, 243, 185);
-}
-
-/* Recipe names */
-.name {
-    font-size: 32px;
-    padding: 50px;
-    text-align: center;
-    background: #6b705c;
-    margin: 30px;
-    margin-top: -20px;
-}
-
-.individual {
-    padding: 85px;
-    background:  transparent;
-
+.footer {
+    background-color: var(--accent);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
